@@ -162,13 +162,13 @@ def inject_header(filepath: str, details: dict[str, str], slug: str) -> None:
         f.write(header + cleaned_code)
 
 
-def sort_solutions() -> None:
+def sort_problems() -> None:
     """
     Main driver: scans current directory for .py solution files,
     fetches metadata, injects headers, and moves files by difficulty.
     """
     current_dir = os.getcwd()
-    exclude = {"sort_solutions.py"}
+    exclude = {"sort_problems.py"}
 
     files = sorted(
         f
@@ -200,4 +200,4 @@ def sort_solutions() -> None:
 
 
 if __name__ == "__main__":
-    sort_solutions()
+    sort_problems()
