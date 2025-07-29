@@ -32,7 +32,7 @@ Constraints:
 """
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         # Create an empty set to keep track of unique elements
         duplicatesSet = set()
         # Iterate through each number in the input list
